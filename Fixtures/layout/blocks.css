@@ -1,0 +1,4 @@
+body { font-family: "Times New Roman"; font-size: 18px; text-align: justify; }
+p { margin: 0; text-indent: 1.5em; }
+h2 { break-before: page; text-align: center; }
+div.figure { text-align: center; margin: 1em 0; }

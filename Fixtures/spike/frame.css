@@ -1,0 +1,4 @@
+/* webref only: WebKit page geometry (page 600 px wide, 40 px margins, S7) and colors. Our engine takes geometry from the viewport. */
+html, body { margin: 0; background: #fff; }
+body { width: 520px; padding: 40px; color: #000; }
+a { color: inherit; text-decoration: none; }

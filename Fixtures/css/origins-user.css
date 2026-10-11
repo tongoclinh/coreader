@@ -1,0 +1,8 @@
+/* User CSS of the origins fixture. */
+p.u1 { text-align: right; }
+p.u2 { text-align: left !important; }
+p.u3 { text-align: left; }
+p.u4 { text-align: left; }
+p { text-indent: 7px; }
+p.u5 { text-align: right; }
+body { font-family: "Charter"; }

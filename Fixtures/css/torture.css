@@ -1,0 +1,52 @@
+/* CSS parity fixture: every construct below must compute the same in CoReader and WebKit. */
+<!--
+body { line-height: 1.4; }
+-->
+/* Selectors and specificity */
+p { margin: 0.5em 0 0 0; text-indent: 1.5em; }
+div.box p { text-indent: 2em; }
+div.box > p.lead { text-indent: 0; font-weight: bolder; }
+h2 + p { text-indent: 0; margin-top: 0; }
+#special { text-align: right; }
+p.a.b { font-style: italic; }
+.x, .y { margin-left: 10%; }
+* + h3 { margin-top: 2rem; }
+section p em { font-weight: 300; }
+p#special.a { line-height: 20px; }
+/* Origin within the book: later wins at equal specificity; !important beats specificity */
+p.order { text-align: left; }
+p.order { text-align: center; }
+#imp { text-align: left; }
+p.imp { text-align: justify !important; }
+P.UPPER { FONT-SIZE: 20PX; }
+/* Units and values */
+.units { font-size: 12pt; margin: 1rem 2em 3% 4px; text-indent: 5%; }
+.kw-small { font-size: smaller; }
+.kw-large { font-size: larger; }
+.kw-abs { font-size: x-large; line-height: normal; }
+.lh-num { line-height: 2; }
+.lh-pct { line-height: 150%; }
+.lh-em { line-height: 1.2em; }
+.m1 { margin: 7px; }
+.m2 { margin: 1em 2em; }
+.m3 { margin: 1px 2px 3px; }
+.auto { margin: 0 auto; }
+.w100 { font-weight: 100; }
+.lighter { font-weight: lighter; }
+.hide { display: none; }
+.blockspan { display: block; }
+.inl { display: inline; }
+.fam { font-family: "Charter", serif; }
+.fam2 { font-family: Iowan Old Style, Georgia; }
+.esc\2e dot { font-weight: bold; }
+/* Inheritance of a % text-indent: resolves per block */
+div.pct { text-indent: 10%; margin-left: 50px; }
+/* Invalid or unsupported: must change nothing */
+p:hover { text-align: right; }
+p[class], p::frobnicate { text-align: right; }
+p { colr: red; text-align: middle; font-size: -3px; margin-top: 3furlongs; }
+@media print { p { text-align: right; } }
+@media amzn-kf8 { p { text-align: right; } }
+@supports (display: frobnicate) { p { text-align: right; } }
+@page { margin: 0; }
+.after-bad { text-indent: 3px; }

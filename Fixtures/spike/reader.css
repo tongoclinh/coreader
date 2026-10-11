@@ -1,0 +1,3 @@
+/* Reader settings as user CSS (S7: Times New Roman 18 px, justified). Our engine gets it with --user-css and
+   merges it after the book CSS; webref links it after the book CSS, so both see the same order. */
+body { font-family: "Times New Roman"; font-size: 18px; text-align: justify; }

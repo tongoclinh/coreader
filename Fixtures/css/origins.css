@@ -1,0 +1,8 @@
+/* Book CSS of the origins fixture (ours only). User CSS is merged after this sheet. */
+p { text-align: center; }
+p.u2 { text-align: center !important; }
+p.u3 { text-align: right !important; }
+body p.u4 { text-align: center; }
+p.u5 { text-align: center; }
+div.trap { text-indent: 0; }
+p[lang], p.dropped { margin-left: 33px; }

@@ -1,0 +1,11 @@
+/* Book CSS of the synthetic spike fixtures. webref gets a copy with -webkit-initial-letter and a red cap (spike.sh ref_css). */
+body { line-height: 1.5; }
+h1 { font-size: 1.25em; font-weight: bold; text-align: center; margin: 1em 0 0.5em 0; }
+p { margin: 0.5em 0 0 0; text-indent: 1.25em; }
+h1 + p, hr.break + p, aside p, p.dc-2, p.dc-3, p.dc-5, p.dc-3-2 { text-indent: 0; }
+hr.break { margin: 1em 0; }
+p.dc-2::first-letter, p.dc-3::first-letter, p.dc-5::first-letter, p.dc-3-2::first-letter { font-family: "Times New Roman"; font-weight: bold; margin-right: 4px; }
+p.dc-2::first-letter { initial-letter: 2; }
+p.dc-3::first-letter { initial-letter: 3; }
+p.dc-5::first-letter { initial-letter: 5; }
+p.dc-3-2::first-letter { initial-letter: 3 2; }

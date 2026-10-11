@@ -1,0 +1,9 @@
+.refs/
+build/
+DerivedData/
+*.xcodeproj/
+.DS_Store
+xcuserdata/
+Fixtures/private/
+.build/
+artifacts/

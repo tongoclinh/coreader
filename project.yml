@@ -1,0 +1,23 @@
+name: CoReader
+options:
+  deploymentTarget:
+    macOS: "14.0"
+packages:
+  CoReaderEngine:
+    path: .
+targets:
+  CoReader:
+    type: application
+    platform: macOS
+    sources: [App]
+    dependencies:
+      - package: CoReaderEngine
+        product: CoReaderEngine
+    settings:
+      base:
+        INFOPLIST_FILE: App/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: local.coreader
+        SWIFT_VERSION: "5"
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        GENERATE_INFOPLIST_FILE: NO
